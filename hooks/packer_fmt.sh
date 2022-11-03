@@ -9,7 +9,7 @@ if [ -z "$(command -v packer)" ]; then
     exit 1
 fi
 
-if ! packer fmt -check .; then
+if ! packer fmt .; then
     echo "Failed"
     echo "================================"
     exit 1
