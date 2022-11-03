@@ -10,9 +10,9 @@ if [ -z "$(command -v packer)" ]; then
 fi
 
 if ! packer validate .; then
-    echo
     echo "Failed"
     echo "================================"
+    exit 1
 else
     echo "Successful"
     echo "================================"
